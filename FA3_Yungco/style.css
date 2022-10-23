@@ -1,0 +1,50 @@
+* {
+	box-sizing:border-box;
+}
+
+body {
+	background-image: url("images/hatdog.jpg");
+	background-repeat:no-repeat;
+	background-size: 100%;
+	margin:0;
+	padding-top:77.6px;
+}
+
+h1 {
+	text-align:center;
+	background-color:#D9F1FF;
+	font-family:fantasy;
+	border-color:blue;
+	border-style:dotted;
+	border-width:2px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:15px;
+	padding-right:15px;
+	box-sizing:250px;
+	margin-bottom:20px;
+	margin:auto;
+	width:250px;
+}
+
+p {
+	text-align:justify;
+	background-color:hsl(202, 100%, 93%);
+	font-style:italic;
+	padding:20px;
+	border-width:3px;
+	border-color:black;
+	border-top-style:dashed;
+	border-bottom-style:dotted;
+	border-left-style:solid;
+	border-right-style:double;
+	width:500px;
+	margin:auto;
+}
+
+span {
+	font-style:italic;
+	color:rgb(113, 12, 4);
+	margin-left:2px;
+	margin-right:5px;
+}
