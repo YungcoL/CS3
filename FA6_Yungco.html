@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<head>    
+<meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+	<style>     
+		a, div {      
+		margin: 10px;   
+		padding: 20px;         
+		}    
+		a:link {          
+		background-color: blue;
+		}       
+		a:visited { 
+		background-color: red;         
+		}        
+		a:hover {   
+		background-color: yellow;
+		}  
+		a:active {     
+        background-color: green;         
+		}      
+		#firstDiv:target{       
+		background-color: #192a56;          
+		color: #f5f6fa;
+		}       
+		#secondDiv:target{           
+		border: 10px dotted green;
+		background-color: mediumseagreen;
+        }    
+	</style>  
+ </head>
+ <body>  
+	<a href="#firstDiv" onclick="">First Link</a>     
+	<a href="#secondDiv">Second Link</a>    
+	<br><br>   
+	<div id="firstDiv">Div 1 here</div> <br><br> <div id="secondDiv">Div 2 here</div> 
+ </body>
+ </html>
+ 
