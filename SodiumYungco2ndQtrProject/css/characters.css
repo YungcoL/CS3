@@ -1,0 +1,167 @@
+* {
+	font-family:monospace;
+}
+body {
+	background-color:black;
+}
+#upheader {
+	position:absolute;
+	text-align:center;
+	font-size:20px;
+	flex:1;
+	right:45%;
+	z-index:1;
+	top:0.20%;
+}
+#upheader h3 a{
+	text-decoration:none;
+}
+#upheader h3 a:hover {
+  color: red;
+}
+#upheader ul li {
+	list-style:none;
+	display:inline-block;
+	padding-left:18px;
+}
+#header {
+	position:absolute;
+	text-align:center;
+	font-size:40px;
+	right:32.7%;
+	top:5%;
+	color:white;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px purple, 0 0 40px purple, 0 0 50px purple, 0 0 60px purple, 0 0 70px purple;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px purple, 0 0 40px purple, 0 0 50px purple, 0 0 60px purple, 0 0 70px purple, 0 0 80px purple;
+  }
+}
+#animatronics {
+	position:absolute;
+	text-align:center;
+	font-size:30px;
+	flex:1;
+	right:65%;
+	top:40%;
+	z-index:1;
+	color:white;
+	width:30%;
+}
+.charadrop {
+    position: relative;
+    display: inline-block;
+}
+.charadrop_sub {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 100%;
+}
+.charadrop_sub a {
+    display: block;
+    color: red;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom:1px solid white;
+}
+.charadrop:hover .charadrop_sub {
+    display: block;
+}
+.charadrop_sub a:hover {
+     background-color: red;
+	 color: black;
+}
+#aftons {
+	position:absolute;
+	text-align:center;
+	font-size:30px;
+	flex:1;
+	right:35%;
+	top:40%;
+	z-index:1;
+	color:white;
+	width:30%;
+}
+.famdrop {
+    position: relative;
+    display: inline-block;
+}
+.famdrop_sub {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 100%;
+}
+.famdrop_sub a {
+    display: block;
+    color: red;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom:1px solid white;
+}
+.famdrop:hover .famdrop_sub {
+    display: block;
+}
+.famdrop_sub a:hover {
+     background-color: red;
+	 color: black;
+}
+#children {
+	position:absolute;
+	text-align:center;
+	font-size:30px;
+	flex:1;
+	right:5%;
+	top:31.5%;
+	z-index:1;
+	color:white;
+	width:30%;
+}
+.childdrop {
+    position: relative;
+    display: inline-block;
+}
+.childdrop_sub {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 100%;
+}
+.childdrop_sub a {
+    display: block;
+    color: red;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom:1px solid white;
+}
+.childdrop:hover .childdrop_sub {
+    display: block;
+}
+.childdrop_sub a:hover {
+     background-color: red;
+	 color: black;
+}
+#effect {
+	height: 800px;
+	position:fixed;
+	margin:0px;
+	padding:0px;
+	pointer-events: none;
+	z-index:2;
+}
+#footer {
+	position:relative;
+	display:flex;
+    left:0;
+    bottom:0;
+    width:100%;
+    color:white;
+    text-align:center;
+}
