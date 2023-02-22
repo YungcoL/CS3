@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+		
+			* {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body onload="call()">
+		<script>
+			function call() {
+				var x = confirm("Click For A Gift!");
+				
+				if(x==true) {
+					window.open("second.html");
+				} else {
+					document.write("Aww, Maybe next time");
+				}
+			}
+		</script>
+	</body>
+</html>
