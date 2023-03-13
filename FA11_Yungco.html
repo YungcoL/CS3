@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FA11</title>
+</head>
+<body onload = "determineTriangle(side1, side2, side3)">
+    <script>
+        var side1 = prompt("Input the value for the first side: ");
+        var side2 = prompt("Input the value for the second side: ");
+        var side3 = prompt("Input the value for the third side: ");
+        function determineTriangle(side1, side2, side3){
+            if (side1 === side2 && side2 === side3){
+                alert("The triangle is EQUILATERAL");
+            }
+            else{
+                if (side1 === side2 || side2 === side3 || side1 === side3){
+                    alert("The triangle is ISOCELES");
+                }
+                else{
+                    alert("The triangle is SCALENE");
+                }
+            }
+        }
+    </script>
+</html>
