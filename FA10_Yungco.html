@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		var random
+		random = Math.floor(Math.random() *1000);
+		var num = random.toString();
+		document.write ("Randomly Generated Number : " + random + "<br>" + "<br>");
+		
+		var breakdown
+		if (num.length == 3) {
+		x = num [2];
+		y = num [1] * 10;
+		z = num [0] * 100;
+		} else if (num.length == 2) {
+		x = num [1];
+		y = num [0] * 10;
+		z = 0;
+		} else {
+		x = num [0];
+		y = 0;
+		z = 0;
+		}
+		document.write ("Breakdown : " + z + ", " + y + ", " + x);
+	</script>
+</body>
+</html>
