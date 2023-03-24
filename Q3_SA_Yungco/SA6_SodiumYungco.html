@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>One Time Password </title>
+        <style>
+        	body {background: lightblue; 
+            	text-align: center;
+            	font-family: arial;
+                color: navy;
+            }
+            button {padding: 10px; background:violet }
+            a {font-size: 0.5em; color: maroon}
+        </style>
+
+	</head>
+<body onload="generateOTP()">
+	<h1> Final Verification Step </h1>
+	<h2> Current OTP: <span id="otp"> _ _ _ _ _ _ <span> <a onclick="resetOTP"> New OTP </a></h2>
+    <button onclick="typeOTP()"> Enter the OTP as shown above </button>
+    <script>
+        	function generateOTP() {
+        		var digits = '0123456789';
+        		var OTP = '';
+        		for (var i = 0; i < 6; i++ ) {
+        			OTP += digits[Math.floor(Math.random() * 10)];
+        		}
+        		document.getElementById("otp").textContent = OTP;
+        	}
+            
+            function typeOTP() {
+                var type = prompt("Please enter the given OTP:");
+                var generatedOTP = document.getElementById("otp").textContent;
+                // fixed typo in the condition (typeOTP -> typedOTP)
+                if (parseInt(type) === parseInt(generatedOTP)) {
+                    window.open("https://youtu.be/oDH2TJ9F5Eg");}
+                else {
+                    alert("Invalid input.");
+                    generateOTP(); // fixed function name (OTP -> generateOTP)
+                }
+            }
+        </script>
+</body>
+</html>
+
